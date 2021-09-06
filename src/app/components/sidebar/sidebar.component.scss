@@ -1,0 +1,199 @@
+.sidebar {
+    max-width: 636px;
+    background: #faf9ff;
+  
+    header {
+      height: 84px;
+      display: flex;
+      align-items: center;
+      padding: 0px 23px;
+      border-bottom: 1px solid #eceef5;
+      justify-content: space-between;
+      .bar-title {
+        display: inline-block;
+        p {
+          height: 40px;
+          width: 40px;
+          background-color: #ffffff;
+          position: relative;
+          border: 1px solid #eceef5;
+          border-radius: 10px;
+          display: inline-block;
+          cursor: pointer;
+          margin-right: 15px;
+          i {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #8083a3;
+          }
+        }
+        h3 {
+          display: inline-block;
+          font-size: 20px;
+          line-height: 40px;
+          color: #1a1c1d;
+          contain: content;
+        }
+      }
+      .arrow {
+        display: inline-block;
+        p {
+          height: 40px;
+          width: 40px;
+          background-color: #ffffff;
+          position: relative;
+          border: 1px solid #eceef5;
+          border-radius: 10px;
+          display: inline-block;
+          cursor: pointer;
+          // margin-right: 15px;
+          i {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #8083a3;
+          }
+        }
+      }
+    }
+  
+    .contact-field {
+      padding: 28px 35px 50px 35px;
+      .search-field {
+        // position: relative;
+        margin-bottom: 20px;
+        h6 {
+          font-size: 14px;
+          line-height: 21px;
+          color: #8083a3;
+        }
+        .input-icon {
+          position: relative;
+          input {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            width: 547px;
+            height: 19px;
+            border: none;
+            outline: none;
+            background-color: #faf9ff;
+            padding-right: 25px;
+            // color: #1A1C1D;
+            // display: inline-block;
+            &::placeholder {
+              color: #1a1c1d;
+              font-weight: bold;
+              font-style: normal;
+              font-size: 16px;
+              line-height: 19px;
+            }
+          }
+          i {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: 20px;
+            color: #1d1d24;
+          }
+        }
+      }
+      .contacts-list {
+        // display: grid;
+        // grid-template-columns: 153px 1fr;
+        // grid-gap: 16px 286px;
+        .single-item {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 16px;
+          cursor: pointer;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+          .names {
+              display: grid;
+              grid-gap: 18px;
+              grid-template-columns: 36px auto;
+              .user-img {
+                  position: relative;
+                  height: 36px;
+                  width: 36px;
+                  img {
+                      display: inline-block;
+                      margin-right: 8px;
+                      height: 100%;
+                      width: 100%;
+                      border-radius: 10px;
+                    }
+                    .user-status {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 8px;
+                        height: 8px;
+                        border: 2px solid #fff;
+                        background-color: #F6933E;
+                        border-radius: 50%;
+                    }
+                    .user-status-online{
+                        background-color: #28C345;
+                      }
+                    .user-status-offline{
+                      background-color: #F6933E;
+                    }
+              }
+            div {
+              display: inline-block;
+              h6 {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21px;
+                color: #1a1c1d;
+              }
+              h5 {
+                font-size: 14px;
+                line-height: 21px;
+                color: #8083a3;
+              }
+            }
+          }
+          .calls {
+            p {
+              height: 36px;
+              width: 36px;
+              background-color: #ffffff;
+              position: relative;
+              border: 1px solid #eceef5;
+              border-radius: 10px;
+              display: inline-block;
+              cursor: pointer;
+              margin-right: 6px;
+              &:last-child {
+                margin-right: 0px;
+              }
+              i {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #8083a3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,179 @@
+<ngx-spinner></ngx-spinner>
+<div class="sidebar">
+    <header>
+        <div class="bar-title">
+            <p><i class="fa fa-bars"></i></p>
+            <h3>{{title}}</h3>
+        </div>
+        <div class="arrow">
+            <p style="margin-right: 8px;"><i class='fa fa-angle-left'></i></p>
+            <p><i class='fa fa-angle-right'></i></p>
+        </div>
+    </header>
+
+    <div class="contact-field">
+        <div class="search-field">
+            <h6>Search for a contact</h6>
+            <div class="input-icon">
+                <input placeholder="Name, email or phone number" >
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <div class="contacts-list">
+            <div *ngFor="let i of array" class="single-item " (click)="GetSingleData(i.id)">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="{{i.avatar}}" alt="">
+                        <span class="user-status " [ngClass]="{'status-online':i.status,'status-offline':!i.status}"></span>
+                    </div>
+                    <div>
+                        <h6>{{i.name}}</h6>
+                        <h5>{{i.designation}}</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <!-- <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img1.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Johanna Stevens</h6>
+                        <h5>Project Manager</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Nicholas Gordon</h6>
+                        <h5>Developer</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img1.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Johanna Stevens</h6>
+                        <h5>Project Manager</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Nicholas Gordon</h6>
+                        <h5>Developer</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img1.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Johanna Stevens</h6>
+                        <h5>Project Manager</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Nicholas Gordon</h6>
+                        <h5>Developer</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img1.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Johanna Stevens</h6>
+                        <h5>Project Manager</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="names">
+                    <div class="user-img">
+                        <img src="./assets/images/Img.png" alt="">
+                        <span class="user-status user-status-online user-status-offline"></span>
+                    </div>
+                    <div>
+                        <h6>Nicholas Gordon</h6>
+                        <h5>Developer</h5>
+                    </div>
+                </div>
+                <div class="calls">
+                    <p><i class='fa fa-comment'></i></p>
+                    <p><i class="fa fa-phone"></i></p>
+                    <p><i class='fa fa-ellipsis-h'></i></p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>

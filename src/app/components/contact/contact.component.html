@@ -1,0 +1,58 @@
+<div class="contact" *ngIf="data">
+    <div class="info">
+        <div class="johanna-img">
+            <img src="{{data.avatar}}" alt="">
+        </div>
+        <div class="btn">
+            <div class="info-name">
+                <h4>{{data.name}}</h4>
+                <h5>{{data.designation}}</h5>
+            </div>
+            <div class="info-contact">
+                <button><i class='fa fa-comment'></i>Message</button>
+                <p><i class="fa fa-phone"></i></p>
+                <p><i class="fa fa-window-maximize"></i></p>
+                <p><i class='fa fa-ellipsis-h'></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bio">
+        <div class="bio-dail-meeting">
+            <label for="">Bio</label>
+            <div class="para">
+                <p>{{data.bio}}</p>
+            </div>
+        </div>
+        <div class="email-phone">
+            <label for="">Email</label>
+            <span></span>
+            <p>{{data.email}}</p> 
+            <button>Primary</button>
+        </div>
+        <div class="bio-dail-meeting">
+            <label for="">Dial</label>
+            <p>{{data.dial}}</p>
+        </div>
+        <div class="bio-dail-meeting">
+            <label for="">Meeting</label>
+            <p>{{data.meeting}}</p>
+        </div>
+        <div class="email-phone">
+            <label for="">Phone</label>
+            <span></span>
+            <p>{{data.phone}}</p> 
+            <button>Primary</button>
+        </div>
+        <div class="social-icon">
+            <label for="">Social</label>
+            <div>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

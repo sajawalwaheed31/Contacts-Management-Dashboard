@@ -1,0 +1,190 @@
+.contact {
+    padding: 62px 0 0 0;
+    @media (min-width: 320px) and (max-width: 767px){ 
+        
+    }
+    .info {
+        display: grid;
+        grid-template-columns: 114px 266px;
+        grid-gap: 25px;
+        margin-left: 134px;
+        margin-bottom: 39px;
+        .johanna-img {
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 26px;
+            }
+        }
+
+        .btn {
+            .info-name {
+                margin-bottom: 21px;
+                h4 {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #1A1C1D;
+                }
+                h5 {
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #8083A3;
+                }
+            }
+            .info-contact {
+                height: 42px;
+                -webkit-writing-mode: vertical-lr;
+                button {
+                    width: 122px;
+                    height: 42px;
+                    background: #6B59CC;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    line-height: 42px;
+                    color: #ffffff;
+                    font-family: 'lato';
+                    margin-right: 6px;
+                    cursor: pointer;
+                    border: none;
+                    &:hover {
+                        color: #6B59CC;
+                        background-color: #ffffff;
+                        transition: 2s;
+                        border: 1px solid #6B59CC;
+                    }
+                    i {
+                        margin-right: 6px;
+                    }
+                }
+                p {
+                    height: 42px;
+                    width: 42px;
+                    background-color: #ffffff;
+                    position: relative;
+                    border: 1px solid #ECEEF5;
+                    border-radius: 10px;
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-right: 6px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    i {
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        color: #8083A3;
+                    }
+                }
+            }
+        }
+    }
+
+    .bio {
+        padding: 0 119px 0 48px;
+        .bio-dail-meeting {
+            display: grid;
+            grid-template-columns: 52px 1fr;
+            grid-gap: 34px;
+            margin-bottom: 25px;
+            label {
+                color: #8083A3;
+                font-size: 14px;
+                line-height: 21px;
+                margin-right: 34px;
+                width: 52px;
+                text-align: end;
+            }
+            .para {
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #1A1C1D;
+                    margin-bottom: 8px;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 21px;
+                color: #1A1C1D;
+            }
+        }
+        .email-phone {
+            display: grid;
+            grid-template-columns: 52px 34px auto auto;
+            margin-bottom: 25px;
+            label {
+                color: #8083A3;
+                font-size: 14px;
+                line-height: 21px;
+                margin-right: 34px;
+                width: 52px;
+                text-align: end;
+            }
+            p {
+                font-size: 14px;
+                line-height: 21px;
+                color: #1A1C1D;
+            }
+            button {
+                width: 76px;
+                height: 28px;
+                border-radius: 8px;
+                background-color: #F3F4F9;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21px;
+                color: #8083A3;
+                justify-self: self-end;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    background-color: #8083A3;
+                    color: #F3F4F9;
+                    transition: 2s;
+                }
+            }
+        }
+        .social-icon {
+            display: grid;
+            grid-template-columns: 52px 1fr;
+            grid-gap: 34px;
+            label {
+                color: #8083A3;
+                font-size: 14px;
+                line-height: 21px;
+                margin-right: 34px;
+                width: 52px;
+                text-align: end;
+                align-self: center;
+            }
+            a {
+                height: 40px;
+                width: 40px;
+                background-color: #ffffff;
+                position: relative;
+                border: 1px solid #ECEEF5;
+                border-radius: 10px;
+                display: inline-block;
+                cursor: pointer;
+                margin-right: 6px;
+                i {
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    color: #8083A3;
+                }
+            }
+        }
+    }
+}
